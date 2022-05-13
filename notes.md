@@ -27,3 +27,9 @@ Commits changes from files in the staging area:
 $ git commit -m "<commit message>"
 ```
 
+Shows log of commits:
+
+```
+# git log --oneline --decorate
+```
+
