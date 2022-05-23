@@ -44,3 +44,14 @@ Moves (HEAD) to other commit/branch:
 ```
 $ git checkout <commit hash/branch name>
 ```
+
+Shows differences between two commits, files or branches.
+
+```
+$ git diff <commit/file/branch> <commit/file/branch>
+```
+
+* The first argument is the one that changes are being compared <b>from</b>;
+* If no argument is supplied, compares current changes from HEAD.
+* It is also possible to pass the name of a file as a third argument.
+
