@@ -50,10 +50,31 @@ $ git push <name>
 
 * Name might be omitted if there's only one remote repo added.
 
-### 8) Shows log of commits:
+### Shows log of commits:
 ```
-# git log --oneline --decorate
+$ git log --oneline --decorate
 ```
+
+### Moves HEAD to a previous commit keeping changes:
+```
+$ git reset HEAD~
+```
+* --soft will put changes in the staging area.
+
+### Moves HEAD to a previous commit ERASING changes (caution):
+
+```
+$ git reset HEAD~ --hard
+```
+
+* This is not a good practice in Git and can be seen as coming back in time. Since the usage of reset in general modifies the history of the repository, pushing content like this might require the --force attribute.
+
+### Moves HEAD to a commit:
+```
+$ git reset <commit>
+```
+
+  * Attributes can be passed as usual.
 
 ### Creates a new branch from current branch:
 ```
