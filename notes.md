@@ -17,10 +17,15 @@ $ git status
 
 Adds a file to the staging area:
 ```
-$ git add <file name>
+$ git add <file>
 ```
 
-Commits changes from files in the staging area:
+Removes a file from the staging area:
+```
+$ git restore --staged <file>
+```
+
+Commits changes from files added to the staging area:
 ```
 $ git commit -m "<commit message>"
 ```
@@ -55,3 +60,11 @@ $ git diff <commit/file/branch> <commit/file/branch>
 * If no argument is supplied, compares current changes from HEAD.
 * It is also possible to pass the name of a file as a third argument.
 
+Merges changes from a branch into HEAD since that diverged from it:
+
+```
+$ git merge <branch>
+```
+
+* `git merge --abort` can be used to abort a merge in case of conflicts;
+* `git merge --continue` can be used to proceed with a merge after staging changes that solved reported conflicts.
