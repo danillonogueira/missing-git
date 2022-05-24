@@ -10,12 +10,12 @@ https://missing.csail.mit.edu/2020/version-control/
 
 ## Commands
 
-### 1) Shows the current status of a branch:
+### Shows the current status of a branch:
 ```
 $ git status
 ```
 
-### 2) Removes unstaged changes made to a file:
+### Removes unstaged changes made to a file:
 ```
 $ git checkout <file>
 ```
@@ -23,27 +23,27 @@ $ git checkout <file>
 $ git restore <file>
 ```
 
-### 3) Adds a file to the staging area:
+### Adds a file to the staging area:
 ```
 $ git add <file>
 ```
 
-### 4) Removes a file from the staging area:
+### Removes a file from the staging area:
 ```
 $ git restore --staged <file>
 ```
 
-### 5) Commits changes from files added to the staging area:
+### Commits changes from files added to the staging area:
 ```
 $ git commit -m "<commit message>"
 ```
 
-### 6) Links local repository to a remote repository:
+### Links local repository to a remote repository:
 ```
 $ git remote add <name> <url>
 ```
 
-### 7) Pushes changes to the remote repository:
+### Pushes changes to the remote repository:
 ```
 $ git push <name>
 ```
@@ -55,22 +55,22 @@ $ git push <name>
 # git log --oneline --decorate
 ```
 
-### 9) Creates a new branch from current branch:
+### Creates a new branch from current branch:
 ```
 $ git branch <name>
 ```
 
-### 10) Creates a new branch from current branch and moves (HEAD) to it:
+### Creates a new branch from current branch and moves (HEAD) to it:
 ```
 $ git checkout -b <name>
 ```
 
-### 11) Moves (HEAD) to other commit/branch:
+### Moves (HEAD) to other commit/branch:
 ```
 $ git checkout <commit hash/branch name>
 ```
 
-### 12) Shows differences between two commits, files or branches.
+### Shows differences between two commits, files or branches.
 
 ```
 $ git diff <commit/file/branch> <commit/file/branch>
@@ -80,12 +80,12 @@ $ git diff <commit/file/branch> <commit/file/branch>
 * If no argument is supplied, compares current changes from HEAD.
 * It is also possible to pass the name of a file as a third argument.
 
-### 13) Merges changes from a branch into HEAD since that diverged from it:
+### Merges changes from a branch into HEAD since that diverged from it:
 
 ```
 $ git merge <branch>
 ```
 
-* Git's merge function works in a way that, While attempting a merge from branch 1 into branch 2, it will try to ignore changes made to branch 2 since branch 1 last pointed to branch 2. This is called <b>fast-forwarding</b>.
+* Git's merge function works in a way that, while attempting a merge from branch 1 into branch 2, it will try to ignore changes made to branch 2 since branch 1 last pointed to branch 2. This is called <b>fast-forwarding</b>.
 * `git merge --abort` can be used to abort a merge in case of conflicts;
 * `git merge --continue` can be used to proceed with a merge after staging changes that solved reported conflicts.
