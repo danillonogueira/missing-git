@@ -15,6 +15,14 @@ Shows the current status of a branch:
 $ git status
 ```
 
+Removes unstaged changes made to a file:
+```
+$ git checkout <file>
+```
+```
+$ git restore <file>
+```
+
 Adds a file to the staging area:
 ```
 $ git add <file>
