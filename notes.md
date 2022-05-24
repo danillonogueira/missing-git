@@ -86,6 +86,6 @@ $ git diff <commit/file/branch> <commit/file/branch>
 $ git merge <branch>
 ```
 
-* While attempting a merge from branch 1 into branch 2, Git will try to ignore changes made to branch 2 since branch 1 last pointed to branch 2. This is called <b>fast-forwarding</b>.
+* Git's merge function works in a way that, While attempting a merge from branch 1 into branch 2, it will try to ignore changes made to branch 2 since branch 1 last pointed to branch 2. This is called <b>fast-forwarding</b>.
 * `git merge --abort` can be used to abort a merge in case of conflicts;
 * `git merge --continue` can be used to proceed with a merge after staging changes that solved reported conflicts.
